@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>过渡属性transition</title>
+    <style>
+        .transition{
+            width: 200px;height: 120px;
+            border:1px solid ;border-color: green;
+            background-color: #eeeeee;
+            color: black;
+            -webkit-transition-property: border-color,background-color
+        ,color,font-size;
+            -webkit-transition-duration: 1s,2s,3s,4s;
+        }
+        .transition:hover{
+            border-color: silver;
+            background-color: yellow;
+            color: #0000ff;font-size: 20px;
+        }
+        .transition1{
+                     width: 200px;height: 120px;
+                     border:1px solid ;border-color: green;
+                     background-color: #eeeeee;
+                     color: black;
+                     -webkit-transition-property: border-color,background-color
+                     ,color,font-size;
+                     -webkit-transition-duration: 1s,2s,3s,4s;
+            -webkit-transition-timing-function: ease-in;
+                 }
+        .transition1:hover{
+            border-color: silver;
+            background-color: yellow;
+            color: #0000ff;font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+<h3>将鼠标移到矩形对象上</h3>
+<div class="transition">过渡的属性设置：border-color，color,font-size</div>
+<div class="transition1">过渡的属性设置：border-color，color,font-size,线性过渡</div>
+
+</body>
+</html>

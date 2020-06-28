@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>过渡加变换</title>
+    <style>
+        #divA{
+            width: 200px;height: 120px;
+           margin: 30px auto;
+            background-color: red;
+
+            -webkit-transition:all 3s ease-in-out;
+        }
+        #divA:hover{
+            -webkit-transform: rotate(1080deg) scale(0.2,0.2);
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+<h3>鼠标指下面的矩形元素，会旋转缩小</h3>
+<div id="divA"></div>
+</body>
+</html>
